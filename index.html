@@ -12,27 +12,35 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>Survey</h1>
         <hr>
         <form action="http://www.w3schools.com/action_page.php" method="get">
 
             Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
-
+            <input type="text" name="name" required><br> E-mail:
+            <input type="email" name="email" required><br> School:
+            <input type="text" name="school" required><br><br>
             <!--add your own inputs below-->
+            <strong>Interests:</strong> <br>
+            <input type="radio" name="interests" value="games"> Games<br>
+            <input type="radio" name="interests" value="homeworks"> Homeworks<br>
+            <input type="radio" name="interests" value="classworks"> Classworks<br><br>
 
+            <input type="text" name="Favorite" placeholder="Favorite game genre" required><br><br>
 
-
-
-
+            <strong>Favorite Phone Operating System</strong><br>
+            <select name="OS">
+                <option value=" "> </option>
+                <option value="Android"> Android</option>
+                <option value="ios"> ios </option>
+                <option value="windows phone"> Windows Phone</option>
+            </select><br><br>
 
 
 
             <!--add your own inputs above-->
 
-            <input class="blue-button" type="submit" value="Submit">
-        </form>
+            <input class="blue-button" type="submit" value="Submit"></form>
     </div>
 </body>
 
